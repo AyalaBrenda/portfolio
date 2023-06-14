@@ -1,13 +1,12 @@
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     padding-top: 60px;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     color: #2e2e31;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 header {
@@ -19,6 +18,7 @@ header {
     height: 14%;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(107, 104, 104, 0.2); 
+    z-index: 4;
 }
 
 .nav-header {
@@ -67,7 +67,7 @@ header {
 
 .columna-presentacion {
     display: flex;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-left: 10%;
 }
 
@@ -76,44 +76,277 @@ header {
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20%;
 }
 
 .saludo {
     text-align:left;
-    color: #1e1e20;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Mulish', sans-serif;
-    font-weight: bolder;
-    line-height: 1.2;
+    color: #2e2e31;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 .nombre {
     margin-top: 0;
     margin-bottom: 5px;
     color: #7e12a8;
-    font-weight: 900px;
-    line-height: 1.2;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .descripcion-personal {
-    font-weight: lighter;
-    font-size: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 20px;
-    color: #282928;
+    font-size: 60%;
+    color: #000000;
 }
 
-.boton-proyectos {
-    display: flex;
-    padding: 5px 15px;
-    background-color: #7e12a8;
-    color: #fff !important;
-    align-self: center;
+.container-habilidades {
+    text-align: left;
     text-decoration: none;
-    font-size: smaller;
-    border-radius: 15px;
+
 }
 
+.boton-loquehago {
+    background-color: #7e12a8;
+    border-radius: 15px;
+    padding: 5px 15px;
+    border: none;
+    font-size: 60%;
+}
 
+.boton-loquehago:hover {
+    background-color: #9759a3;
+}
 
+.contenedor-imagen {
+    display: flex;
+    flex-direction: row;
+}
 
+.imagen-presentacion {
+    position: absolute;
+    align-self: flex-end;
+    top: 10;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+}
+
+.seccion-habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 10px 70px;
+    background-color: #f6f7fb;
+    text-align: center;
+    color: #000000;
+}
+
+.titulo-habilidades {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.descripcion-habilidades { 
+    display: block;
+    justify-content: center;
+    font-size: 50%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.plantilla-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.cards-superiores {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-inferiores {
+    display: flex;
+    justify-content: center;
+}
+
+.card-habilidades {
+    background-color: #fff;
+    border: 0.5px solid #dddfe5;
+    border-radius: 5px;
+    width: 60px;
+    max-height: 60px;
+    margin: 5px;
+    padding: 30px;
+    transition: border-width 0.3s
+}
+
+.card-habilidades:hover {
+    color: #7e12a8;
+    border-color: #7e12a8;
+}
+
+i {
+    font-size: 40px;
+}
+
+.seccion-cita {
+    display: flex;
+    flex-direction: column;
+    background-color: #7e12a8;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 50px 40px;
+}
+
+.columna-cita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+}
+
+.contenido-cita {
+    font-size: smaller;
+}
+
+.seccion-proyectos {
+    display: flex;
+}
+
+.columna-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 100px 40px;
+    color: #000000;
+    font-size: xx-small;
+}
+
+.titulo-proyectos {
+    font-size: 25px;
+}
+
+.descripcion-proyectos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0px 120px 20px;
+}
+
+.plantilla-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+    justify-content center;
+    padding: 10px 10px 10px;
+}
+
+.card-proyecto {
+    background-color: #fff;
+    border: 0.5px solid #dddfe5;
+    border-radius: 5px;
+    width: 170px;
+    height: 150px;
+    margin: 5px;
+    transition: border-width 0.3s
+}
+
+.card-proyecto:hover {
+    color: #7e12a8;
+    box-shadow: 0 0 1px 1px #7e12a8;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.imagen-proyecto {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.nombre-proyecto {
+    font-weight: 600;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.seccion-contacto {
+    display: flex;
+    background-color: #f6f7fb;
+    padding: 20px;
+    color: #000000;
+}
+
+.card-contacto {
+    display: flex;
+    background-color: #fff;
+    border: 0.5px solid #dddfe5;
+    border-radius: 8px;
+    width: 400px;
+    height: 250px;
+    margin: 5px;
+    padding: 30px 50px 30px;
+    text-align: left;
+}
+
+.columna-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.titulo-seccion {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.descripcion-contacto {
+    display: block;
+    font-size: xx-small;
+    line-height: 1.4;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 60px;
+    background-color: #7e12a8;
+    color: white;
+    list-style: none;
+}
+
+.nav-footer {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-footer-nav {
+    display: flex;
+    margin: 0;
+    text-decoration: none;
+}
+
+.item-nav-footer {
+    margin: 0 10px;
+    display: list-item;
+}
