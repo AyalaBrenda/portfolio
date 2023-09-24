@@ -1,8 +1,6 @@
 body {
     margin: 0;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     padding-top: 60px;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
@@ -11,7 +9,7 @@ body {
 
 header {
     /* aca determinamos la posicion del header */
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -200,6 +198,30 @@ i {
     font-size: 40px;
 }
 
+.fa-html5 {
+    color: #e0621f;
+}
+
+.fa-css3-alt {
+    color: #3c73d3;
+}
+
+.fa-sass {
+    color: #db57ab;
+}
+
+.fa-js {
+    color: #f4d50b;
+}
+
+.fa-react {
+    color: #6dd8ee;
+}
+
+.fa-git-alt {
+    color: #d46216;
+}
+
 .seccion-cita {
     display: flex;
     flex-direction: column;
@@ -216,6 +238,10 @@ i {
     justify-content: center;
     align-items: center;
     font-size: x-small;
+}
+
+.fa-quote-right {
+    color: #fcfcfc;
 }
 
 .contenido-cita {
